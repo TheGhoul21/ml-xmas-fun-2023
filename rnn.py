@@ -34,8 +34,6 @@ X = np.array(X)
 y = np.array(y)
 
 sample = 0
-print(f"{X[sample]=}")
-print(f"{y[sample]=}")
 
 
 # split the data into training and testing
@@ -147,6 +145,8 @@ y_hats_test = np.array(y_hats_test)
 #plot the predictions
 plt.plot(y_test, label="y_test")
 plt.plot(y_hats_test, label="y_hats_test")
+
+plt.legend()
 
 
 plt.show()
